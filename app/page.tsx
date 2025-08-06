@@ -29,7 +29,7 @@ export default function ASCOLITClub() {
   };
 
   const filterTypes = ["All", "Hackathon", "Workshop", "Meetup"];
-  const filterYears = ["All", "2024", "2023"];
+  const filterYears = ["All", "2025", "2024"];
 
   const filteredEvents = events.filter((event) => {
     if (selectedFilter === "All") return true;

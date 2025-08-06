@@ -45,6 +45,13 @@ export const members = [
     linkedin: "#",
     github: "#",
   },
+    {
+    name: "Kushal Dhakal",
+    position: "Treasurer",
+    image: "/Kushal.png",
+    linkedin: "http://www.linkedin.com/in/kushal-dhakal",
+    github: "https://github.com/Kushal216",
+  },
   {
     name: "Shreejit Gautam",
     position: "Technical Lead",
@@ -52,13 +59,7 @@ export const members = [
     linkedin: "#",
     github: "#",
   },
-  {
-    name: "Kushal Dhakal",
-    position: "Treasurer",
-    image: "/Kushal.png",
-    linkedin: "http://www.linkedin.com/in/kushal-dhakal",
-    github: "https://github.com/Kushal216",
-  },
+
   {
     name: "Ajita Shrestha",
     position: "Event Head",
@@ -121,48 +122,64 @@ export const members = [
 
 export const events = [
   {
+  title: "Farewell for Past Members",
+  date: "June 30, 2025",
+  type: "Meetup",
+  year: "2025",
+  image: "/Farewell.jpg", 
+  description:
+    "A heartfelt farewell organized to honor the contributions of past club members. The event featured speeches, sharing of memories, and appreciation of efforts made throughout their journey.",
+},
+  {
     title: "Web Dev and Git workshop",
-    date: "june 23-30, 2024",
+    date: "June 23–30, 2025",
     type: "Workshop",
     year: "2025",
     image: "/webworkshop.jpg",
+    description: "A week-long hands-on workshop focused on web development fundamentals and using Git for version control. Participants built and deployed their own projects.",
+  },
+  {
+    title: "Getting Involved in IT Community",
+    date: "January 3, 2025",
+    type: "Meetup",
+    year: "2025",
+    image: "/Getting-involved.jpg",
+    description: "An introductory session for new students to learn about ASCOL IT Club, its goals, and how to actively participate and grow in the tech community.",
   },
   {
     title: "ASCOL Hackfest 2024",
-    date: "September 15-17, 2024",
+    date: "September 15–17, 2024",
     type: "Hackathon",
     year: "2024",
     image: "/ascolhackfest.jpg",
+    description: "ASCOL’s flagship 48-hour hackathon where teams built impactful tech solutions. The event featured mentoring, judging panels, and exciting prizes.",
   },
   {
-    title: "First general meetup",
+    title: "First General Meetup",
     date: "July 19, 2024",
     type: "Meetup",
     year: "2024",
     image: "/generalmeetup.jpg",
+    description: "A casual get-together for club members to connect, share ideas, and discuss upcoming events. Set the tone for a collaborative year ahead.",
   },
   {
-    title: "Web Development Bootcamp",
-    date: "December 8, 2023",
+    title: "Graphics Design Bootcamp",
+    date: "June 9–13, 2024",
     type: "Workshop",
-    year: "2023",
-    image: "/web-development-workshop.png",
+    year: "2024",
+    image: "/Graphics-bootcamp.jpg",
+    description: "An immersive bootcamp covering the basics of graphic design, tools like Adobe Illustrator and Canva, and creative thinking in digital media.",
   },
   {
-    title: "Cybersecurity Seminar",
-    date: "November 20, 2023",
-    type: "Meetup",
-    year: "2023",
-    image: "/cybersecurity-seminar-students.png",
+    title: "Importance of Skills, Academics, and Networking in IT",
+    date: "March 29, 2024",
+    type: "Workshop",
+    year: "2024",
+    image: "Network.jpg",
+    description: "An interactive session that emphasized the value of balancing technical skills, academic knowledge, and building a strong network for success in IT.",
   },
-  {
-    title: "Code Challenge 2023",
-    date: "October 15, 2023",
-    type: "Hackathon",
-    year: "2023",
-    image: "/coding-competition-students.png",
-  },
-]
+];
+
 
 export const projects = [
   {

@@ -36,7 +36,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 text-lg shadow-lg shadow-blue-500/25 cursor-pointer"
+              className="bg-gradient-to-r mb-2 md:mb-0 from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-3 text-lg shadow-lg shadow-blue-500/25 cursor-pointer"
               onClick={() => scrollToSection("#join")}
             >
               Join Now
@@ -52,7 +52,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform mb-1 -translate-x-1/2 animate-bounce">
+        <div className="absolute  bottom-8 left-1/2 transform mb-1 -translate-x-1/2 animate-bounce">
           <ChevronDown className="w-6 h-6 text-blue-400" />
         </div>
       </div>
