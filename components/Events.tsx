@@ -13,6 +13,7 @@ interface Event {
   type: string;
   year: string;
   image: string;
+  description:string;
 }
 
 interface EventsProps {
@@ -58,11 +59,11 @@ export default function Events({
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+       <div className="flex flex-wrap justify-center gap-8 ">
           {events.map((event, index) => (
             <Dialog key={index}>
               <DialogTrigger asChild>
-                <Card className="group cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <Card className="group md:w-[30%] w-[80%] cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                   <div className="relative overflow-hidden rounded-t-lg">
                     <Image
                       src={event.image || "/placeholder.svg"}
@@ -93,7 +94,7 @@ export default function Events({
                     alt={event.title}
                     width={800}
                     height={600}
-                    className="w-full h-96 object-cover rounded-lg"
+                    className="w-full mt-4 h-96 object-cover rounded-lg"
                   />
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">
@@ -105,11 +106,7 @@ export default function Events({
                     </p>
                     <Badge className="bg-indigo-600 mb-4">{event.type}</Badge>
                     <p className="text-gray-700">
-                      This was an amazing event where our community came
-                      together to learn, innovate, and collaborate. The event
-                      featured hands-on workshops, expert speakers, and
-                      networking opportunities that helped participants grow
-                      their skills and expand their professional network.
+                     {event.description}
                     </p>
                   </div>
                 </div>
