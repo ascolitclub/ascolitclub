@@ -7,8 +7,8 @@ interface Member {
   name: string;
   position: string;
   image: string;
-  linkedin: string;
-  github: string;
+  linkedin: any;
+  github: any;
 }
 
 interface TeamProps {
@@ -50,14 +50,16 @@ export default function Team({ members }: TeamProps) {
                 </p>
                 <div className="flex justify-center space-x-4">
                   <Link
-                    href={member.linkedin}
+                  target="blank"
+                    href={member.linkedin??"https://www.linkedin.com/company/ascol-i-t-club"}
                     className="text-gray-400 hover:text-blue-600 transition-colors duration-200"
                   >
                     <Linkedin className="w-5 h-5" />
                   </Link>
                   <Link
-                    href={member.github}
-                    className="text-gray-400 hover:text-gray-900 transition-colors duration-200"
+                  target="blank"
+                    href={member.github??"https://github.com/ascolitclub"}
+                    className="text-gray-400 hover:text-gray-600 transition-colors duration-200"
                   >
                     <Github className="w-5 h-5" />
                   </Link>
