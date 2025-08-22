@@ -12,12 +12,13 @@ export default function Hero({ scrollToSection }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center  overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 w-full h-full">
         <div className="w-full h-full bg-[url('/ascolitclub.jpg')] bg-cover bg-center opacity-10"></div>
         <div className="absolute inset-0 bg-gradient-to-b"></div>
       </div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8">
           <div className="space-y-4">
@@ -33,6 +34,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
             </p>
           </div>
 
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
@@ -50,9 +52,23 @@ export default function Hero({ scrollToSection }: HeroProps) {
               View Events
             </Button>
           </div>
+
+          {/* New Hackfest Button */}
+          <div className="pt-4 mt-4">
+            <a href="http://hackfest.ascolitclub.com"
+            target="blank">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-10 py-6 text-lg shadow-lg shadow-purple-500/30 cursor-pointer rounded-2xl"
+            >
+              🚀 ASCOL Hackfest 2025
+            </Button>
+            </a>
+          </div>
         </div>
 
-        <div className="absolute  bottom-8 left-1/2 transform mb-1 -translate-x-1/2 animate-bounce">
+        {/* Chevron Down */}
+        <div className="absolute bottom-8 left-1/2 transform mb-4 -translate-x-1/2 animate-bounce">
           <ChevronDown className="w-6 h-6 text-blue-400" />
         </div>
       </div>

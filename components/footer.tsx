@@ -71,7 +71,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
             <p className="text-gray-400">
               Lainchaur, Kathmandu, Nepal
               <br />
-              ascolitclub2080@gmail.com
+            mail@ascolitclub.com
               <br />
               +977 9814092092
             </p>

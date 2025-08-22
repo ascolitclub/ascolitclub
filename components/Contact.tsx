@@ -40,8 +40,7 @@ export default function Contact() {
                 <h3 className="text-lg font-semibold text-white mb-2">
                   Email Us
                 </h3>
-                <p className="text-gray-600">ascolitclub2080@gmail.com</p>
-                {/* <p className="text-gray-600">president@ascolitclub.edu.np</p> */}
+                <p className="text-gray-600">mail@ascolitclub.com</p>
               </div>
             </div>
 
