@@ -7,8 +7,6 @@ interface FooterProps {
 }
 
 export default function Footer({ scrollToSection }: FooterProps) {
-
-
   return (
     <footer className="bg-slate-950 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,26 +69,25 @@ export default function Footer({ scrollToSection }: FooterProps) {
             <p className="text-gray-400">
               Lainchaur, Kathmandu, Nepal
               <br />
-            mail@ascolitclub.com
+              mail@ascolitclub.com
               <br />
               +977 9814092092
             </p>
-            <div className="flex items-center space-x-2">
+            <div className="  items-center space-x-2">
               <span className="text-sm">Powered by</span>
-              <Image
-                src="/kailash.png"
-                width={200}
-                height={80}
-                alt="Kailash Cloud"
-                className="opacity-80 hover:opacity-100 transition-opacity duration-200"
-              />
+              <Link href={"https://www.kailashcloud.com/"} target="blank">
+                <div className="cursor-pointer">
+                  <span className="text-[#1971c2] font-extrabold text-3xl">
+                    Kailash
+                  </span>
+                  Cloud
+                </div>
+              </Link>
             </div>
           </div>
-          
         </div>
         <div className="text-center text-slate-400">
           <div className="flex flex-col items-center space-y-4">
-            
             <p>&copy; 2025 ASCOL IT Club. All rights reserved.</p>
           </div>
         </div>
